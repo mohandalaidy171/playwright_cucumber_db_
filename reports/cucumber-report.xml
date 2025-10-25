@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="14.006" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-10-25T21:01:58.240Z">
+  <testcase classname="Login with Database User" name="Login with invalid user" time="6.686">
+    <failure type="Error" message="function timed out, ensure the promise resolves within 5000 milliseconds"><![CDATA[    at Timeout.<anonymous> (C:\Users\mohan\OneDrive\Desktop\plywright_project\lastOne\node_modules\@cucumber\cucumber\src\time.ts:52:14)
+    at listOnTimeout (node:internal/timers:588:17)
+    at processTimers (node:internal/timers:523:7)]]></failure>
+    <system-out><![CDATA[Given I open the login page.................................................passed
+When I fill username and password from database user........................passed
+Then I should verify login error............................................failed]]></system-out>
+  </testcase>
+  <testcase classname="Login with Database User" name="Login with valid user from database" time="1.623">
+    <system-out><![CDATA[Given I open the login page.................................................passed
+When I fill username and password from database user........................passed
+Then I should verify login success..........................................passed]]></system-out>
+  </testcase>
+</testsuite>
