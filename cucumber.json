@@ -1,0 +1,22 @@
+{
+  "default": {
+    "paths": ["tests/features/*.feature"],
+    "requireModule": ["ts-node/register"],
+    "require": [
+      "tests/hooks/hooks.ts",
+      "tests/stepDefinitions/*.ts"
+    ],
+    "format": [
+       "progress-bar",
+      "html:reports/cucumber-report.html",
+      "json:reports/cucumber-report.json",
+      "junit:reports/cucumber-report.xml",
+      "message:reports/cucumber-report.ndjson",
+      "summary"
+    ], "parallel": 2,
+    "publishQuiet": true,
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    }
+  }
+}
